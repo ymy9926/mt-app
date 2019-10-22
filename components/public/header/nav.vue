@@ -1,0 +1,323 @@
+<template>
+  <div class="m-nav">
+    <ul class="nav">
+      <li class="list">
+        <nuxt-link to="/y">我的美团</nuxt-link>
+        <dl>
+          <dd>
+            <nuxt-link to="/y">我的订单</nuxt-link>
+          </dd>
+          <dd>
+            <nuxt-link to="/y">我的收藏</nuxt-link>
+          </dd>
+          <dd>
+            <nuxt-link to="/y">抵用券</nuxt-link>
+          </dd>
+          <dd>
+            <nuxt-link to="/y">账户设置</nuxt-link>
+          </dd>
+        </dl>
+      </li>
+      <li class="list">
+        <nuxt-link to="/app">手机APP</nuxt-link>
+      </li>
+      <li class="list">
+        <nuxt-link to="/shop">商家中心</nuxt-link>
+        <dl>
+          <dd>
+            <nuxt-link to="/shop">登录商家中心</nuxt-link>
+          </dd>
+          <dd>
+            <nuxt-link to="/shop">我想合作</nuxt-link>
+          </dd>
+          <dd>
+            <nuxt-link to="/shop">免费手机开店</nuxt-link>
+          </dd>
+          <dd>
+            <nuxt-link to="/shop">商家申请开票</nuxt-link>
+          </dd>
+        </dl>
+      </li>
+      <li class="list site">
+        <nuxt-link to="/site">网站导航</nuxt-link>
+        <div class="subContainer">
+          <dl class="hotel">
+            <dt>酒店旅游</dt>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+          </dl>
+          <dl class="food">
+            <dt>酒店旅游</dt>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+          </dl>
+          <dl class="movie">
+            <dt>看电影</dt>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+            <dd>酒店旅游</dd>
+          </dl>
+          <dl class="app">
+            <dt>手机应用</dt>
+            <dd>
+              <a href="#">
+                <img
+                  title="手机APP"
+                  src="http://s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/appicons/meituan.png"
+                  alt
+                >
+              </a>
+            </dd>
+            <dd>
+              <a href="#">
+                <img
+                  title="手机APP"
+                  src="http://s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/appicons/meituan.png"
+                  alt
+                >
+              </a>
+            </dd>
+            <dd>
+              <a href="#">
+                <img
+                  title="手机APP"
+                  src="http://s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/appicons/meituan.png"
+                  alt
+                >
+              </a>
+            </dd>
+            <dd>
+              <a href="#">
+                <img
+                  title="手机APP"
+                  src="http://s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/appicons/meituan.png"
+                  alt
+                >
+              </a>
+            </dd>
+            <dd>
+              <a href="#">
+                <img
+                  title="手机APP"
+                  src="http://s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/appicons/meituan.png"
+                  alt
+                >
+              </a>
+            </dd>
+          </dl>
+        </div>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script type="text/ecmascript-6">
+export default {
+  data() {
+    return {};
+  },
+  components: {}
+};
+</script>
+
+<style scoped lang="stylus">
+.m-nav {
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  height: 40px;
+  line-height: 40px;
+
+  .nav {
+    list-style: none;
+    float: right;
+
+    >li {
+      float: left;
+      width: 78px;
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+
+      a {
+        color: #999;
+
+        &:hover {
+          color: #31BBAC;
+        }
+      }
+
+      &.list:hover {
+        border: 1px solid #E5E5E5;
+        border-top: none;
+
+        >dl {
+          display: block;
+        }
+
+        .subContainer {
+          display: flex;
+        }
+      }
+
+      dl {
+        background: #fff;
+        display: none;
+        z-index: 999;
+
+        dd {
+          line-height: 35px;
+
+          &:hover {
+            color: #31BBAC;
+          }
+        }
+      }
+
+      &.bd {
+        dl {
+          width: 140%;
+          position: relative;
+          border-top: 1px solid #e5e5e5;
+          left: -31px;
+          top: -1px;
+          border-bottom: 1px solid #e5e5e5;
+          border-left: 1px solid #E5E5E5;
+          position: relative;
+
+          &:before {
+            content: ' ';
+            display: block;
+            background: #fff;
+            height: 4px;
+            width: 76px;
+            position: absolute;
+            top: -1px;
+            right: 0;
+          }
+        }
+
+        &:hover {
+          border-bottom: none;
+        }
+      }
+
+      &.site {
+        &:hover {
+          border-bottom: none;
+        }
+      }
+
+      .subContainer {
+        box-sizing: border-box;
+        background: #fff;
+        padding: 30px 36px 36px 47px;
+        width: 1250px;
+        position: relative;
+        left: -1175px;
+        z-index: 999;
+        border: 1px solid #e5e5e5;
+        border-right: 0;
+        display: none;
+        text-align: left;
+
+        &:before {
+          content: ' ';
+          display: block;
+          width: 76px;
+          height: 4px;
+          background: #fff;
+          position: absolute;
+          top: -1px;
+          right: 0;
+        }
+
+        >dl {
+          box-sizing: border-box;
+          text-align: left;
+          display: inline-block !important;
+          margin-right: 47px;
+          vertical-align: top;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          dt {
+            margin-bottom: 26px;
+            font-size: 14px;
+            color: #31BBAC;
+            text-align: center;
+          }
+
+          dd {
+            width: 78px;
+            display: inline-block;
+            text-align: center;
+          }
+
+          &.hotel {
+            width: 250px;
+          }
+
+          &.food {
+            width: 250px;
+          }
+
+          &.movie {
+            width: 90px;
+
+            dd {
+              width: 100%;
+            }
+          }
+
+          &.app {
+            width: 380px;
+            flex: 1;
+            text-align: center;
+
+            dd {
+              width: 60px;
+              height: 73px;
+              line-height: 73px;
+              text-align: center;
+              margin: 0 8px;
+
+              img {
+                width: 60px;
+                height: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</style>
